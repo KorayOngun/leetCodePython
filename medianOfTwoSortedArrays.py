@@ -33,7 +33,7 @@ Acceptance Rate
 35.7%
 """
 class Solution:
-    def findMedianSortedArrays(self, nums1: List[int], nums2: List[int]) -> float:
+    def findMedianSortedArrays(self, nums1: list[int], nums2: list[int]) -> float:
         f = sorted(nums1+nums2)
         l = len(f)
         l2 = l/2
