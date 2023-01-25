@@ -39,3 +39,4 @@ class Solution:
                 if t == _t:
                     if _t in s:
                         return t
+                    
