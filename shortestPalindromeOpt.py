@@ -41,4 +41,3 @@ class Solution:
         
 res = Solution().shortestPalindrome(s)
 print(res)
-print((s[3:0:-1]+s)[::-1])
