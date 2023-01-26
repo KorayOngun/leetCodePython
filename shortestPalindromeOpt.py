@@ -39,5 +39,5 @@ class Solution:
             c2 = c2-1
         return s[c1:c2:-1]+s 
         
-res = Solution().shortestPalindrome(s)
+res = Solution().shortestPalindrome("abcd")
 print(res)
