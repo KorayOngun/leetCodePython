@@ -54,19 +54,10 @@ Memory
 Beats
 61.62%
 """
-
+import math
 class Solution:
     def uniquePaths(self, m: int, n: int) -> int:
-        def faktoriyel(x) -> int:
-            r = 1
-            for i in range(1,x+1):
-                r = r*i
-            return r
         move_down = m-1
         move_right = n-1
         move_total = move_down + move_right
-        move_total = faktoriyel(move_total)
-        move_right = faktoriyel(move_right)
-        move_down = faktoriyel(move_down)
-        c = move_down*move_right
-        return int(move_total/c)
+        return math.comb(move_total,move_right)
